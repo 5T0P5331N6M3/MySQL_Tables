@@ -1,16 +1,14 @@
 USE codeup_test_db;
 
-    -- First write your queries as separate INSERT statements for each record and test. You should see no output.
-    -- Refactor your script to use a single INSERT statement for all the records and test it again. Again, this should not generate any output.
+-- TRUNCATE TABLE albums;
 
-INSERT INTO albums (author_first_name, author_last_name, record_name, released_date, sales, genre)
-VALUES
-    ('Bob Marley & The Wailers', 'Legend: The Best of Bob Marley & The Wailers', 1984, 'Reggae', 22.9),
-    ('Guns N''Roses', 'Appetite for Destruction',1987, 'Hard Rock', 22.8)
+INSERT INTO albums (artist, record_name, release_date, genre, sales)
+VALUES ('Bob Marley & The Wailers', 'Legend: The Best of Bob Marley & The Wailers', 1984, 'Reggae', 22.9),
+    ('Guns N''Roses', 'Appetite for Destruction',1987, 'Hard Rock', 22.8),
     ('Bruce Springsteen', 'Born in the U.S.A.', 1984, 'Heartland Rock', 22),
     ('ABBA', 'Gold: Greatest Hits', 1992, 'Pop, Disco', 21.6),
-    ('Dire Straits', 'Brothers in Arms', 1985, 'Roots Rock, Blues Rock, Soft Rock', 21.1)
-    ('Santana', 'Supernatural', 1999, 'Latin Rock', 20.8)
+    ('Dire Straits', 'Brothers in Arms', 1985, 'Roots Rock, Blues Rock, Soft Rock', 21.1),
+    ('Santana', 'Supernatural', 1999, 'Latin Rock', 20.8),
     ('Madonna', 'The Immaculate Collection', 1990, 'Pop, Dance', 19.8),
     ('Pink Floyd',	'The Wall',	1979, 'Progressive Rock', 18.9),
     ('The Beatles', 'Sgt. Pepper''s Lonely Hearts Club Band', 1967, 'Rock', 18.3),
@@ -33,4 +31,4 @@ VALUES
     ('Whitney Houston', 'The Bodyguard', 1992, 'R&B, soul, pop, soundtrack', 28.7),
     ('Pink Floyd', 'The Dark Side of the Moon', 1973, 'Progressive rock', 24.8),
     ('AC/DC', 'Back in Black',1980,'Hard rock', 30.1),
-    ('Michael Jackson', 'Thriller', 1982, 'Pop, post-disco, funk, rock', 50.2),
+    ('Michael Jackson', 'Thriller', 1982, 'Pop, post-disco, funk, rock', 50.2);
