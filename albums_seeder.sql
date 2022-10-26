@@ -1,6 +1,6 @@
 USE codeup_test_db;
 
--- TRUNCATE TABLE albums;
+TRUNCATE albums;
 
 INSERT INTO albums (artist, record_name, release_date, genre, sales)
 VALUES ('Bob Marley & The Wailers', 'Legend: The Best of Bob Marley & The Wailers', 1984, 'Reggae', 22.9),
