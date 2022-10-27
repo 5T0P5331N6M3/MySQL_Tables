@@ -1,7 +1,7 @@
 USE employees;
 
 SELECT DISTINCT title
-FROM employees;
+FROM titles;
 
 /*In your script, use DISTINCT to find the unique titles in the titles table. Your results should look like:
 
