@@ -3,13 +3,4 @@ USE employees;
 SELECT DISTINCT title
 FROM titles;
 
-/*In your script, use DISTINCT to find the unique titles in the titles table. Your results should look like:
-
-
-Senior Engineer
-Staff
-Engineer
-Senior Staff
-Assistant Engineer
-Technique Leader
-Manager*/
+SELECT first_name, last_name FROM employees WHERE last_name LIKE 'E%' AND last_name LIKE '%E' GROUP BY last_name, first_name;
