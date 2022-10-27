@@ -12,3 +12,5 @@ CREATE TABLE albums
     sales FLOAT,
     PRIMARY KEY (id)
 );
+
+DESCRIBE albums;
